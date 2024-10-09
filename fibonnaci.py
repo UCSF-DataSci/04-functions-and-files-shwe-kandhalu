@@ -29,7 +29,7 @@ if __name__ == "__main__":
 	result = generate_fibonacci(100)
 
 with open("fibonnaci_100.txt", 'w') as file:
-	print(f"The fibonacci numbers under 100:{generate_fibonacci(100)}", file = file)
+	print(f"Fibonacci numbers under 100 are:{generate_fibonacci(100)}")
 
 
 
