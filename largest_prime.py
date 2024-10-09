@@ -12,3 +12,32 @@ Task: Find the largest prime Fibonacci number less that 50000
 """
 
 # You're on your own for this one. Good luck!
+
+from fibonnaci import generate_fibonacci
+import argparse
+import sys
+
+def prime_number(x):
+    if x <= 1:
+        return False
+    for i in range(3, int(x**0.5) + 1, 2):
+        if x % i == 0:
+            return False
+    return True
+    
+def largest_prime(a):
+    fibonnaci_list = generate_fibonacci(limit) # gen fib numbers to the limit
+   
+    prime_fib_num = [] # empty list to hold prime fibonnaci numbers
+
+    for num in fibonnaci_list:
+        if prime_number(x): # check if the fib number is prime
+            prime_fib_num.append(num) # if the number is prime, add it to the list
+
+    if prime_fib_num:
+        max_prime = max(prime_fib_num)
+        return max_prime # return largest prime fib number
+    else:
+        return None
+    
+
